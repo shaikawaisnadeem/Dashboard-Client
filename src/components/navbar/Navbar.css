@@ -1,0 +1,183 @@
+.navbar-sidenavbar-wrapper{
+    display: grid;
+    grid-template-columns: 5% 95%;
+}
+.navbar-sidenavbar-wrapper-extension{
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 42px;
+    height: 80px;
+    border-bottom: 1px solid #202020;
+}
+
+.navbar .project-name h1 {
+    font-weight: 500;
+    color: white;
+    font-size: 32px;
+}
+
+.navbar .navbar-profile{
+    display: flex;
+    gap: 12px;
+}
+
+.navbar .navbar-profile .toggle-theme-button,.notification,.profile-user-icon {
+    background-color: #171717;
+    padding: 6px 7px;   
+    border-radius: 12px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 6px; 
+}
+.navbar .navbar-profile .notification{
+    position: relative;
+}
+.navbar .navbar-profile .notification p{
+    position: absolute;
+    color:white;
+    right: -2px;
+    top: -4px;
+    border-radius: 999px;
+    padding: 3px 3px;
+    font-size: 10px;
+    background-color: #c2431b;
+}
+.toggle-theme-button .light-mode-icon ,.dark-mode-icon,.notification-icon,.user-icon{
+    color: #636363;
+    cursor: pointer;
+}
+.user-icon{
+    padding: 4px 1px;
+}
+.navbar .navbar-profile .profile-user-icon{
+    border: 2px solid #2d7f41;
+    padding: 4px 0px;
+    border-radius: 999px;
+    width: 40px;
+    position: relative;
+}
+.profile-user-icon .user-active{
+    background-color: #33d251;
+    padding: 6px 6px;
+    position: absolute;
+    bottom: 1px;
+    right: -4px;
+    border-radius: 999px;
+    cursor: pointer;
+}
+.active-status{
+    display: flex;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 0;
+    width: 120px;
+    position: absolute;
+    bottom: -37px;
+    opacity: 0;
+    right: -6px;
+    padding: 6px 0px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #2d7f41;
+    background-color: #202020;
+    transition: opacity 0.4s ease-in-out;
+    border-radius: 12px;
+}
+.profile-user-icon:hover .active-status {
+    opacity: 1;
+}
+
+.sidenavbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 0px;
+    border-right: 1px solid #202020;
+    height: 100vh;
+    flex-direction: column;
+    position: relative;
+}
+.extended-sidenavbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 0px;
+    border-right: 1px solid #202020;
+    height: 100vh;
+    flex-direction: column;
+    position: relative;
+}
+.sidenavbar .sidenavbar-icon .spinner-icon{
+    color: #3974fc;
+}
+.extension-tasks-icons,.efficiency-icon-icons,.logout-div-extension {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-bottom: 2px solid #2c2b2b;
+    padding-bottom: 17px;
+    padding-left: 10px;
+    color: white;
+}
+
+.extension-tasks-icons .extension-dash-div,.notes-dash-div,.calendar-dash-div,.extension-timer-div,.assistant-dash-div,.analysis-dash-div,.extension-timer-div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #171717;
+    padding: 7px 12px;
+    border-radius: 12px;
+    width: 170px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    transition: background-color 0.2s ease;
+}
+
+.extension-tasks-icons .extension-dash-div:hover,.notes-dash-div:hover,.calendar-dash-div:hover,.extension-timer-div:hover,.assistant-dash-div:hover,.extension-timer-div:hover {
+    background-color: #222222;
+}
+
+.dashboard-icon-extension,
+.notes-icon-extension,
+.calendar-icon-extension,.timer-icon-extension ,.assistant-icon-extension,.analysis-icon-extension{
+    color: white;
+}
+
+
+.double-arrow-icon{
+    color: white;
+    position: absolute;
+    top: 6px;
+    right: -35px;
+    cursor: pointer;
+}
+
+.sidenavbar .tasks-icons,.efficiency-icons,.logout-div{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-bottom: 2px solid #2c2b2b;
+    padding-bottom: 17px;
+}
+.dashboard-icon,.notes-icon,.calendar-icon,.timer-icon,.assistant-icon,.logout-icon,.analysis-icon{
+    background-color: #171717;
+    color: white;
+    padding: 7px 7px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.dashboard-icon:hover,.notes-icon:hover,.calendar-icon:hover,.timer-icon:hover,.assistant-icon:hover,.logout-icon:hover{
+     background-color: #222222;
+}
+.dashboard-icon .logout-div ,.logout-icon{
+    color: #7d311f;
+}

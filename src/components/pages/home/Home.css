@@ -1,0 +1,96 @@
+.home-page{
+    background-color: #000;
+    height: 100vh;  
+}
+.grid-container{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    justify-content: center;
+}
+
+
+.pomodoro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  width: 400px;
+  justify-self: center;
+}
+
+.pomodoro-card {
+  background-color: #101010;
+  width: 400px;
+  padding: 30px 25px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.pomodoro-title {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+.pomodoro-subtitle {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 25px;
+}
+
+
+.pomodoro-player {
+  background-color: #c84320;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  cursor: pointer;
+  border: 3px solid #dc775e;
+  box-shadow: 0 12px 20px rgba(200, 67, 32, 0.4), inset 0 2px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.pause-icon {
+  color: white;
+  font-size: 40px;
+}
+
+.pomodoro-timer {
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.pomodoro-limits {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+}
+
+.limit-item {
+  background-color: #222;
+  border-radius: 10px;
+  padding: 14px 25px;
+  text-align: center;
+  flex: 1;
+  max-width: 150px;
+}
+
+.limit-label {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 6px;
+}
+
+.limit-time {
+  font-weight: 700;
+  font-size: 18px;
+}

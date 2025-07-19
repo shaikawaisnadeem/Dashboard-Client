@@ -1,0 +1,87 @@
+.sidenavbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 0px;
+    border-right: 1px solid #202020;
+    height: 100vh;
+    flex-direction: column;
+    position: relative;
+}
+.extended-sidenavbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 0px;
+    border-right: 1px solid #202020;
+    height: 100vh;
+    flex-direction: column;
+    position: relative;
+}
+.sidenavbar .sidenavbar-icon .spinner-icon{
+    color: #3974fc;
+}
+.extension-tasks-icons,.efficiency-icon-icons,.logout-div-extension {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-bottom: 2px solid #2c2b2b;
+    padding-bottom: 17px;
+    padding-left: 10px;
+    color: white;
+}
+
+.extension-tasks-icons .extension-dash-div,.notes-dash-div,.calendar-dash-div,.extension-timer-div,.assistant-dash-div,.extension-timer-div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #171717;
+    padding: 7px 12px;
+    border-radius: 12px;
+    width: 170px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    transition: background-color 0.2s ease;
+}
+
+.extension-tasks-icons .extension-dash-div:hover,.notes-dash-div:hover,.calendar-dash-div:hover,.extension-timer-div:hover,.assistant-dash-div:hover,.extension-timer-div:hover {
+    background-color: #222222;
+}
+
+.dashboard-icon-extension,
+.notes-icon-extension,
+.calendar-icon-extension {
+    color: white;
+}
+
+
+.double-arrow-icon{
+    color: white;
+    position: absolute;
+    top: 6px;
+    right: -35px;
+    cursor: pointer;
+}
+
+.sidenavbar .tasks-icons,.efficiency-icons,.logout-div{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-bottom: 2px solid #2c2b2b;
+    padding-bottom: 17px;
+}
+.dashboard-icon,.notes-icon,.calendar-icon,.timer-icon,.assistant-icon,.logout-icon{
+    background-color: #171717;
+    color: white;
+    padding: 7px 7px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.dashboard-icon:hover,.notes-icon:hover,.calendar-icon:hover,.timer-icon:hover,.assistant-icon:hover,.logout-icon:hover{
+     background-color: #222222;
+}
+.dashboard-icon .logout-div ,.logout-icon{
+    color: #7d311f;
+}
