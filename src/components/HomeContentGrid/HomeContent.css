@@ -29,11 +29,6 @@
   cursor: default;
 }
 
-.pomodoro-card:hover {
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
-  transform: translateY(-4px);
-}
-
 .pomodoro-title {
   font-weight: 700;
   font-size: 20px;

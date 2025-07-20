@@ -1,4 +1,4 @@
-.sidenavbar,.sidenavbar-extension{
+.sidenavbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -7,10 +7,18 @@
     height: 100vh;
     flex-direction: column;
     position: relative;
-    width: 15%;
+    width: 100%;
 }
 .sidenavbar-extension{
-    width: 5%;
+    width: 100%;
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 0px;
+    border-right: 1px solid #202020;
+    height: 100vh;
+    flex-direction: column;
+    position: relative;
 }
 .extended-sidenavbar{
     display: flex;

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './HomeContent.css';
 import { IoMdPause } from "react-icons/io";
 import { GrResume } from "react-icons/gr";
@@ -9,7 +9,12 @@ const HomeContent = () => {
     const togglePause = () => {
         setPause(prev => !prev);
     };
-
+    const [minutes,setMinutes] = useState('');
+    const [seconds, setSeconds] = useState('');
+    useEffect(()=>{
+        const 
+    })
+    
    
     return (
         <div className='grid-container'>
