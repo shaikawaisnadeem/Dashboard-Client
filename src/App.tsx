@@ -3,7 +3,7 @@ import Home from './components/pages/home/Home';
 import ReactContext from './components/context/ReactContext';
 import { useState } from 'react';
 function App() {
-  const [extension, setExtension] = useState<boolean >(false)
+  const [extension, setExtension] = useState<boolean >(true)
   const toggleExtention = ()=>{
     setExtension(prev=>!prev)
   }

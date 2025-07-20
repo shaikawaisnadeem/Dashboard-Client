@@ -1,0 +1,114 @@
+.grid-container {
+  padding: 20px 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px; 
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.pomodoro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.pomodoro-card {
+  background-color: #121212;
+  width: 100%;
+  max-width: 320px;
+  padding: 24px 20px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: default;
+}
+
+.pomodoro-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  transform: translateY(-4px);
+}
+
+.pomodoro-title {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #e0e0e0;
+  text-align: center;
+}
+
+.pomodoro-subtitle {
+  font-size: 13px;
+  color: #999999;
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+.pomodoro-player {
+  background-color: #d6453c;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 22px;
+  cursor: pointer !important;
+  border: 3px solid #bf3b35;
+  box-shadow: 0 8px 16px rgba(214, 69, 60, 0.5), inset 0 2px 8px rgba(0, 0, 0, 0.35);
+  transition: background-color 0.3s ease;
+}
+
+.pomodoro-player:hover {
+  background-color: #c2372f;
+}
+
+.pause-icon,.resume-icon {
+  color: white;
+  font-size: 36px;
+}
+
+.pomodoro-timer {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 22px;
+  color: #f0f0f0;
+  letter-spacing: 1px;
+}
+
+.pomodoro-limits {
+  display: flex;
+  gap: 18px;
+  width: 100%;
+  justify-content: center;
+}
+
+.limit-item {
+  background-color: #1f1f1f;
+  border-radius: 12px;
+  padding: 12px 20px;
+  text-align: center;
+  flex: 1;
+  max-width: 140px;
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.05);
+}
+
+.limit-label {
+  font-size: 13px;
+  color: #7d7d7d;
+  margin-bottom: 6px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.limit-time {
+  font-weight: 600;
+  font-size: 16px;
+  color: #eaeaea;
+  letter-spacing: 1px;
+}
