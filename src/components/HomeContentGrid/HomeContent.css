@@ -2,7 +2,7 @@
   padding: 20px 20px;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 24px; 
   justify-content: center;
   box-sizing: border-box;
@@ -13,12 +13,14 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  flex-direction: column;
+  justify-self: center;
 }
 
 .pomodoro-card {
   background-color: #121212;
   width: 100%;
-  max-width: 320px;
+  max-width: 450px;
   padding: 24px 20px;
   border-radius: 16px;
   display: flex;
@@ -28,82 +30,363 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   cursor: default;
 }
+.break-type{
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 17px;
+}
+.pomodoro-bg{
+  background-color: #edd256 !important;
+  font-weight: 600;
+}
+.shortbreak-bg{
+  background-color: #9dccee !important;
+  font-weight: 600;
+}
+.longbreak-bg{
+  background-color: #ef6a60 !important;
+  font-weight: 600;
+}
+.start-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 13px;
+  width: 250px;
+}
+.start-button button{
+  background-color: transparent;
+  color: green;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 500;
+  background-color: rgb(27, 26, 26);
+  transition: background-color 0.3s ease;
+  margin-top: 13px;
+}
+.start-button button:hover{
+  background-color: #4d4d4d;
+}
+.pomodoro-color{
+  color: white !important;
+}
+.shortbreak-color{ 
+   color: white !important;
 
-.pomodoro-title {
-  font-weight: 700;
-  font-size: 20px;
+}
+.motivation{
+  margin-top: 15px;
+  padding: 22px 0;
+  width: 250px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 22px;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.longbreak-color{
+  color: white !important;
+}
+.timer-pomodoro{
+  margin-top: 22px;
+  background-color: #ecce49;
+  padding: 15px 42px;
+  width: 150px;
+  border-radius: 12px;
+  font-size: 24px;
+}
+.break-type button{
+  width: 150px;
+  color: white;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  height: 50px;
+  padding: 7px 9px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+.timer-pomodoro{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+
+}
+.break-type button:hover{
+  background-color: rgb(111, 107, 107);
+}
+
+ .meetings-dashboard {
+  background: #18181c;
+  width: 370px;
+  border-radius: 20px;
+  padding: 18px 16px 18px 16px;
+  color: #fff;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.meetings-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  gap: 10px;
+  position: relative;
+}
+
+.meetings-title {
+  font-size: 1.13rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  margin-right: 7px;
+}
+
+.meetings-count {
+  display: inline-block;
+  font-size: 0.95rem;
+  background: #232328;
+  color: #9696a3;
+  border-radius: 8px;
+  min-width: 26px;
+  text-align: center;
+  margin-right: auto;
+  padding: 2px 8px;
+  font-weight: 500;
+}
+
+.meetings-viewall {
+  color: #3f85fe;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-left: auto;
+  letter-spacing: 0.03em;
+}
+
+.meetings-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.meeting-card {
+  background: #232328;
+  border-radius: 16px;
+  min-height: 110px;
+  padding: 14px 14px 12px 14px;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.meeting-card-red {
+  background: #3c2325;
+  color: #ffeded;
+}
+
+.meeting-card-red .meeting-desc {
+  color: #ffeded;
+}
+
+.meeting-card-blue {
+  background: #191c29;
+  color: #3f85fe;
+  justify-content: center;
+  align-items: center;
+  min-height: 110px;
+  position: relative;
+}
+
+.meeting-card-blue .meeting-desc-blue {
+  color: #3f85fe;
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.07rem;
+  margin-top: 8px;
+}
+
+.meeting-time-row {
+  display: flex;
+  align-items: center;
+  gap: 7px;
   margin-bottom: 8px;
-  color: #e0e0e0;
-  text-align: center;
+  position: relative;
 }
 
-.pomodoro-subtitle {
-  font-size: 13px;
-  color: #999999;
-  margin-bottom: 22px;
-  text-align: center;
+.meeting-period {
+  font-size: 0.67rem;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  color: #a1a1b0;
+  margin-right: 0;
 }
 
-.pomodoro-player {
-  background-color: #d6453c;
-  width: 75px;
-  height: 75px;
+.meeting-time {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: inherit;
+  margin-right: 9px;
+}
+
+.meeting-icon img {
+  width: 22px;
+  height: 22px;
+  opacity: 0.7;
+}
+
+.meeting-card-red .meeting-icon img {
+  filter: drop-shadow(0 0 3px #c92637);
+  opacity: 1;
+}
+
+.meeting-card-red .meeting-dot {
+  width: 9px;
+  height: 9px;
+  background: #c92637;
   border-radius: 50%;
+  position: absolute;
+  top: 1px;
+  right: 5px;
+  border: 2px solid #19181c;
+}
+
+.meeting-desc {
+  font-size: 1rem;
+  color: #9696a3;
+  font-weight: 400;
+  line-height: 1.23;
+  margin-top: 2px;
+  word-break: break-word;
+}
+
+.meeting-schedule-row {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 22px;
-  cursor: pointer !important;
-  border: 3px solid #bf3b35;
-  box-shadow: 0 8px 16px rgba(214, 69, 60, 0.5), inset 0 2px 8px rgba(0, 0, 0, 0.35);
-  transition: background-color 0.3s ease;
+  margin-top: 14px;
 }
 
-.pomodoro-player:hover {
-  background-color: #c2372f;
-}
-
-.pause-icon,.resume-icon {
-  color: white;
-  font-size: 36px;
-}
-
-.pomodoro-timer {
-  font-weight: 600;
-  font-size: 24px;
-  margin-bottom: 22px;
-  color: #f0f0f0;
-  letter-spacing: 1px;
-}
-
-.pomodoro-limits {
+.meeting-plus {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1.2px solid #3f85fe;
   display: flex;
-  gap: 18px;
-  width: 100%;
   justify-content: center;
-}
-
-.limit-item {
-  background-color: #1f1f1f;
-  border-radius: 12px;
-  padding: 12px 20px;
-  text-align: center;
-  flex: 1;
-  max-width: 140px;
-  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.05);
-}
-
-.limit-label {
-  font-size: 13px;
-  color: #7d7d7d;
-  margin-bottom: 6px;
+  align-items: center;
+  color: #3f85fe;
+  font-size: 1.7rem;
   font-weight: 500;
-  letter-spacing: 0.5px;
+  margin-bottom: 0px;
+  cursor: pointer;
 }
 
-.limit-time {
+@media (max-width: 450px) {
+  .meetings-dashboard {
+    width: 100vw;
+    padding: 6vw 3vw;
+  }
+}
+.tasks-completed {
+  background-color: #121212;
+  border-radius: 12px;
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.tasks-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.tasks-header h1 {
+  font-size: 20px;
   font-weight: 600;
-  font-size: 16px;
-  color: #eaeaea;
-  letter-spacing: 1px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.task-loader {
+  width: 100%;
+  height: 16px;
+  background-color: #3a3a3a;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.loaded-div {
+  width: 60%;
+  height: 100%;
+  background-color: #ad92e3;
+  border-radius: 10px;
+  transition: width 0.5s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.task-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.task-1,
+.task-2,
+.task-3 {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  color: #e0e0e0;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.task-status {
+  font-weight: 600;
+  color: #3f85fe;
+}
+
+.task-1 .task-status {
+  color: #5cd65c; 
+}
+.task-progress-text {
+  font-size: 14px;
+  color: #b0b0b0;
+  margin-bottom: 16px;
+  font-weight: 500;
+  margin-top: 16px;
+}
+
+.task-2 .task-status {
+  color: #f0ad4e; 
+}
+
+.task-3 .task-status {
+  color: #f56c6c;
 }
