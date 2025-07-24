@@ -3,6 +3,8 @@ import Home from './components/pages/home/Home';
 import ReactContext from './components/context/ReactContext';
 import { useState } from 'react';
 import { BrowserRouter,Route,Routes } from 'react-router-dom';
+import Statistics from './components/Statistics/Statistics';
+
 function App() {
     const [pause, setPause] = useState(true);
     const togglePause = () => {
@@ -29,6 +31,7 @@ function App() {
       <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/statistics" element={<Statistics />} />
           </Routes>
       </BrowserRouter>
     </ReactContext>

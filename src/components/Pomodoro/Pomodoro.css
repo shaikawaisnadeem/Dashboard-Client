@@ -1,0 +1,119 @@
+
+.pomodoro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  justify-self: center;
+}
+
+.pomodoro-card {
+  background-color: #121212;
+  width: 100%;
+  max-width: 450px;
+  padding: 24px 20px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: default;
+}
+.break-type{
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 17px;
+}
+.pomodoro-bg{
+  background-color: #edd256 !important;
+  font-weight: 600;
+}
+.shortbreak-bg{
+  background-color: #9dccee !important;
+  font-weight: 600;
+}
+.longbreak-bg{
+  background-color: #ef6a60 !important;
+  font-weight: 600;
+}
+.start-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 13px;
+  width: 250px;
+}
+.start-button button{
+  background-color: transparent;
+  color: green;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 500;
+  background-color: rgb(27, 26, 26);
+  transition: background-color 0.3s ease;
+  margin-top: 13px;
+}
+.start-button button:hover{
+  background-color: #4d4d4d;
+}
+.pomodoro-color{
+  color: white !important;
+}
+.shortbreak-color{ 
+   color: white !important;
+
+}
+.motivation{
+  margin-top: 15px;
+  padding: 22px 0;
+  width: 250px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 22px;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.longbreak-color{
+  color: white !important;
+}
+.timer-pomodoro{
+  margin-top: 22px;
+  background-color: #ecce49;
+  padding: 15px 42px;
+  width: 150px;
+  border-radius: 12px;
+  font-size: 24px;
+}
+.break-type button{
+  width: 150px;
+  color: white;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  height: 50px;
+  padding: 7px 9px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+.timer-pomodoro{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+
+}
+.break-type button:hover{
+  background-color: rgb(111, 107, 107);
+}

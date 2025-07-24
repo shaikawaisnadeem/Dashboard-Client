@@ -1,0 +1,13 @@
+.donut-container {
+  width: 320px;
+  height: 360px;
+  background: #0e0827;
+  padding: 22px 10px 10px 10px;
+  border-radius: 16px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.24);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+}
